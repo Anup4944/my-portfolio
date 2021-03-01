@@ -1,0 +1,119 @@
+:root{
+    --main-color:green;
+    --main-color2:red;
+}
+
+html
+,body{
+    font-family: 'Akaya Telivigala', cursive;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    
+}
+/*==== header ======*/
+.header{
+    min-height: 60vh;
+    background: url('../img/bg_bggenerator_com.png') center center no-repeat;
+    background-size: cover;
+}
+
+/* navbar changing font */
+.navbar{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.navbar .navbar-brand{
+    letter-spacing: 0.3rem;
+    font-size: 1.8rem;
+    background: -webkit-linear-gradient(90deg, red , black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ====== navbar ===== */
+
+#navbarNav ul{
+    margin-left: auto;
+}
+.navbar .nav-link{
+    color: var(--main-color);
+    
+}
+.navbar .active{
+    color: var(--main-color2); 
+}
+.navbar .nav-link:hover{
+    color: var(--main-color2); 
+    /* to change the color when the cursor reach there, then use hover */
+}
+
+/* =========hero======= */
+.hero-text{
+    font-size: 1.8rem;
+}
+.hero-text h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--main-color2);
+}
+
+/*========== skill section======*/
+
+.section-title{
+    margin:1rem;
+    font-size: 5rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.skills div{ 
+    min-width: 30%;
+    font-size: 3rem;
+    /* to target all the div inside class skills */
+} 
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;   
+}
+
+.aboutme{
+    background-color: linear-gradient(#5654d1);
+}
+
+.contact{
+    background-color: rgb(159, 233, 202);
+}
+
+.col {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+footer{
+    position: relative;
+
+}
+#to-up{
+    position: fixed;
+    background: blue;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 999;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px grey;
+
+
+
+}
+
